@@ -6,10 +6,10 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-<meta property="og:url"                content="http://kevintaylor.la" />
-<meta property="og:type"               content="website" />
-<meta property="og:title"              content="Kevin Taylor - Web Developer" />
-<meta property="og:image"              content="<%= image_path('headshot.JPG') %>"/>
+<meta property="og:url" content="http://kevintaylor.la" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Kevin Taylor - Web Developer" />
+<meta property="og:image" content="<%= image_path('headshot.JPG') %>"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -75,14 +75,6 @@
     	margin-right: 15px;
     }
 
-    @media(max-width: 765px){
-    	.nav-col{
-    		min-height: 100px;
-    		max-height: 100px;
-    		overflow: hidden;
-    	}
-    }
-
 	.content-col{
 		padding: 30px 60px;
 		background: white; /* For browsers that do not support gradients */
@@ -92,6 +84,37 @@
 	a:visited{
 		color: #333;
 	}
+    @media(max-width: 765px){
+    	.nav-col{
+    		min-height: 150px;
+    		max-height: 150px;
+    		overflow: hidden;
+    	}
+    	.content-col{
+    		padding: 5px;
+    	}
+    	.img-div{
+    		margin-bottom: 15px;
+    	}
+    	.link-h4{
+    		display: inline-block;
+    		margin: 0px 8px;
+    	}
+    	.social{
+		    position: relative;
+		    width: 100%;
+		    text-align: center;
+		    /* margin-bottom: 15px; */
+		    margin: 0px;
+    	}
+    	.content-col{
+			background-size: cover;
+			overflow: scroll;
+    	}
+		.tech-div .col-sm-6 {
+		    padding: 0px 15px;
+		}
+    }
 </style>
 
   </head>
