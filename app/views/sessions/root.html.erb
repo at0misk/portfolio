@@ -1,0 +1,90 @@
+<style type="text/css">
+	.logo-big h1{
+		font-size: 76px;
+	}
+	.logo-big h2{
+		font-size: 38px;
+	}
+	.logo-big{
+		text-align: center;
+		border: 2px dashed #333;
+	    background: rgba(255,255,255,0.7);
+	    width: 50%;
+	    margin: 0px auto;
+	}
+	.nav-col{
+		display: none;
+	}
+	.content-col{
+		width: 100% !important;
+		background-size: 120%;
+	}
+	.logo-link{
+		display: inline-block;
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-bottom: 30px;
+		font-size: 30px;
+	}
+	.logo-row{
+		margin-top: 15%;
+	}
+	.title{
+      -moz-transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s;
+      /*display: inline-block;*/
+	}
+	.title:hover{
+		opacity: 0.7;
+	}
+	.hover{
+		opacity: 0.7;
+	}
+	@media(max-width: 767px){
+		.logo-big{
+			width: 100%;
+			min-height: 100vh;
+		}
+		.logo-row{
+			margin-top: 0px;
+		}
+		.logo-link{
+			margin-left: 0px;
+			margin-right: 15px; 
+		}
+		.content-col{
+			padding: 0px;
+			background-size: cover;
+		}
+		.logo-row{
+			margin-top: 0px;
+		}
+		.content-col{
+			/*min-height: 300px;*/
+		}
+	}
+</style>
+<div class="row logo-row">
+	<div class="logo-big">
+		<a href="/about"><h1 class="title">KEVIN TAYLOR</h1>
+		<h2 class="title">WEB DEVELOPER</h2></a>
+		<h3 class="logo-link"><a href="/about">ABOUT</a>
+		<h3 class="logo-link"><a href="/portfolio">PORTFOLIO</a>
+		<!-- <h3 class="logo-link"><a href="/services">SERVICES</a> -->
+		<h3 class="logo-link"><a href="/contact">CONTACT</a>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$( document ).on('turbolinks:load', function() {
+		$('.title').hover(
+			function(){
+				$('.title').addClass('hover');
+			},
+			function(){
+				$('.title').removeClass('hover');
+			}
+		)
+	});
+</script>

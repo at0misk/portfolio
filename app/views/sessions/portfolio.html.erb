@@ -1,0 +1,161 @@
+<style type="text/css">
+	.portfolio-row{
+		height: 100%;
+		/*width: 75%;*/
+		margin: 0px auto;
+		border: 2px dashed #333;
+	    background: rgba(255,255,255,0.7);
+	}
+	.portfolio-content{
+		/*text-align: center;*/
+		/*min-height: 650px;*/
+		overflow: scroll;
+		height: 100%;
+	}
+	.img-div img{
+		width: 100%;
+		height: auto;
+	}
+	.img-div img:hover{
+		opacity: 0.6;
+	}
+	.img-div{
+		text-align: center;
+	}
+	.port-row .col-sm-4{
+		min-height: 300px;
+		padding: 15px;
+		padding-top: 40px;
+	}
+	.oasis img{
+		width: 50% !important;
+	}
+	.invis{
+		opacity: 0;
+	}
+	.reveal{
+		opacity: 1;
+	}
+	.port-row .col-sm-4:hover{
+		opacity: 1;
+		background-color: white;
+	}
+	.port-row .col-sm-4{
+      -moz-transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s;
+	}
+	.text{
+      -moz-transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s;
+      text-align: left;
+      font-size: 16px;
+	}
+	img{
+      -moz-transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s;
+	}
+	.port-row a:hover{
+		opacity: 1;
+	}
+	.no-height{
+		height: 0px !important;
+	}
+	.port-header{
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.port-row .col-sm-9 h3{
+		margin-top: 0px;
+	}
+	.port-row{
+		margin-bottom: 30px;
+	}
+	.top-row{
+		margin-top: 20px;
+	}
+</style>
+<div class="row portfolio-row">
+	<div class="col-sm-12 portfolio-content">
+<!-- 		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="port-header">PORTFOLIO</h2>
+			</div>
+		</div> -->
+		<div class="row port-row top-row">
+			<a href="https://evotravelagent.com/ron" target="_blank"><div class="col-sm-12">
+				<div class="col-sm-3 img-div">
+						<%= image_tag('evo-logo') %>
+				</div>
+				<div class="col-sm-9">
+					<h3>EVOLUTION TRAVEL</h3>
+					<p class="text">Evolution Travel in partnership with Archer Travel Service, Inc. have established a home based travel business that is affordable and includes training, sales assistance and dedicated support. Evotravelagent.com is a website for Evolution Travel independent travel agents, where each agent can customize their profile to suite their needs.</p>
+				</div>
+			</div></a>
+		</div>
+		<div class="row port-row">
+			<a href="#" target="_blank"><div class="col-sm-12">
+				<div class="col-sm-3 img-div">
+						<%= image_tag('roadconcerts-logo') %>
+				</div>
+				<div class="col-sm-9">
+					<h3>LOS ANGELES ROAD CONCERTS</h3>
+					<p class="text">Los Angeles Road Concerts is an ongoing series of daylong art, music, literary and performance extravaganzas happening in LA's unused public spaces. This website was created for a past event as part of the World Day of Remembrance for Road Traffic Victims.</p>
+				</div>
+			</div></a>
+		</div>
+		<div class="row port-row">
+			<a href="http://www.oasiscup.com" target="_blank"><div class="col-sm-12">
+				<div class="col-sm-3 img-div oasis">
+						<%= image_tag('oasis-logo') %>
+				</div>
+				<div class="col-sm-9">
+					<h3>OASIS CUP</h3>
+					<p class="text">The Oasis Cup is a soccer tournament taking place in January of 2018 in Palm Desert California.  This website was created to help facilitate group hotel bookings between different teams.</p>
+				</div>
+			</div></a>
+		</div>
+		<div class="row port-row">
+			<a href="http://lanicholson.com" target="_blank"><div class="col-sm-12">
+				<div class="col-sm-3 img-div">
+						<%= image_tag('nich-logo') %>
+				</div>
+				<div class="col-sm-9">
+					<h3>L.A. NICHOLSON</h3>
+					<p class="text">L.A. Nicholson is an author from Los Angeles, CA.  A writer throughout her career, L.A. Nicholson built and managed a communications department of the largest international human resource consulting firm and within three years, was promoted to the first woman partner in the office. She later started her own successful consulting firm.  This website is to promote her book series: MAGICK.</p>
+				</div>
+			</div></a>
+		</div>
+		<div class="row port-row">
+			<a href="http://chasekoopersmith.com" target="_blank"><div class="col-sm-12">
+				<div class="col-sm-3 img-div">
+						<%= image_tag('chase-logo') %>
+				</div>
+				<div class="col-sm-9">
+					<h3><a href="#">CHASE KOOPERSMITH</a></h3>
+					<p class="text">(WARNING: MATURE CONTENT) Chase Koopersmith attended both School of the Museum of Fine Arts Boston [SMFA], and Art Center College of Design; where she received her BFA in photography. Her experience with attending art schools at opposite ends of the spectrum, SMFA being entirely conceptually based while Art Center was almost entirely technically based, has shaped her practice as an artist.</p>
+				</div>
+			</div></a>
+		</div>
+	</div>
+</div>
+
+<!-- <script type="text/javascript">
+	$( document ).on('turbolinks:load', function() {
+	  $('.port-row a').hover(
+		  function() {
+		    $( this ).find(".text").addClass("reveal");
+		    $( this ).find(".text").removeClass("invis");
+		    $( this ).find("img").addClass('invis');
+		    $( this ).find("img").addClass('no-height');
+		  }, function() {
+		    $( this ).find(".text").addClass("invis");
+		    $( this ).find(".text").removeClass("reveal");
+		    $( this ).find("img").removeClass('invis');
+		    $( this ).find("img").removeClass('no-height');
+		  }
+);
+	})
+</script> -->
